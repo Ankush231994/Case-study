@@ -12,7 +12,7 @@ library(ggplot2)
 library(dplyr)
 
 getwd() #displays your working directory
-setwd("/Users/AAYUSH/Desktop/CYCLISTICS") #sets your working directory to simplify calls to data 
+setwd("/Users/Ankush/Desktop/CYCLISTICS") #sets your working directory to simplify calls to data 
 
 
 #=====================
@@ -170,7 +170,7 @@ all_trips_v2 %>%
 #=================================================
 # Create a csv file that we will visualize in Excel, Tableau, or  presentation software
 counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_trips_v2$day_of_week, FUN = mean)
-write.csv(counts, file = '/Users/AAYUSH/Desktop/CYCLISTICS/avg_ride_length.csv')
+write.csv(counts, file = '/Users/Ankush/Desktop/CYCLISTICS/avg_ride_length.csv')
 
 
 
